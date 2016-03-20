@@ -13,7 +13,9 @@ window.addEventListener('load', function() {
 		.addEventListener('click', dodajBarvo);
 		
 	//Odstrani barve
-	
+	var odstraniBarve = function(event) {
+		document.getElementById("barve").innerHTML="";
+	}
 	//Stroboskop
 	var vrednosti = [];
 	var minCas = 0;
@@ -55,5 +57,6 @@ window.addEventListener('load', function() {
 	}
 	
 	document.querySelector("#start").addEventListener('click', zagon);
+	document.querySelector("#odstraniBarve").addEventListener('click', odstraniBarve);
 	
 });
